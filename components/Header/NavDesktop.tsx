@@ -1,44 +1,50 @@
-export default function NavDesktop() {
-  return (
-    <div className="nav__menu">
-      <ul className="nav__menu__list">
-        <li className="nav__menu__list__item">
-          <a href="" className="nav__menu__list__item__link">
-            WORK
-          </a>
-        </li>
+import { motion } from "framer-motion";
 
-        <li className="nav__menu__list__item  active-link">
-          <a href="" className="nav__menu__list__item__link ">
-            ABOUT
-          </a>
-        </li>
-        <li className="nav__menu__list__item">
-          <a href="" className="nav__menu__list__item__link">
-            NEWS
-          </a>
-        </li>
-        <li className="nav__menu__list__item">
-          <a href="" className="nav__menu__list__item__link">
-            THINKING
-          </a>
-        </li>
-        <li className="nav__menu__list__item">
-          <a href="" className="nav__menu__list__item__link">
-            PLEDGE
-          </a>
-        </li>
-        <li className="nav__menu__list__item">
-          <a href="" className="nav__menu__list__item__link">
-            CAREERS
-          </a>
-        </li>
-        <li className="nav__menu__list__item">
-          <a href="" className="nav__menu__list__item__link">
-            CONTACT
-          </a>
-        </li>
-      </ul>
-    </div>
+export default function NavDesktop() {
+  const variant = {
+    active: {
+      y: "0",
+    },
+    inactive: {
+      y: "-100%",
+      transition: { duration: 4 },
+    },
+  };
+
+  return (
+    <motion.div className="nav__menu">
+      <motion.a
+        variants={variant}
+        initial="inactive"
+        animate="active"
+        transition={{ delay: 0.6 }}
+        href=""
+        className="main-navigation__tab "
+      >
+        <p>餐饮</p>
+        <span>Food</span>
+      </motion.a>
+      <motion.a
+        variants={variant}
+        initial="inactive"
+        animate="active"
+        transition={{ delay: 0.3 }}
+        href=""
+        className="main-navigation__tab  "
+      >
+        <p>購物</p>
+        <span>Retail</span>
+      </motion.a>
+      <motion.a
+        variants={variant}
+        initial="inactive"
+        animate="active"
+        href=""
+        className="main-navigation__tab  "
+      >
+        <p>文化</p>
+        <span>Community</span>
+      </motion.a>
+    </motion.div>
   );
 }

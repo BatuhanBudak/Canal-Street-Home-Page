@@ -1,0 +1,375 @@
+.home-hero {
+  padding: 15.625rem 3.75rem 7.5rem;
+}
+@media screen and (max-width: 48em) {
+  .home-hero {
+    padding: 18.75rem 1.875rem 2.5rem;
+  }
+}
+
+.home-hero__text h1 {
+  max-width: 1030px;
+}
+
+.home-hero__text h1 a {
+  padding-bottom: 4px;
+  background-image: repeating-linear-gradient(
+      -45deg,
+      #ffb400,
+      #ffb400 1px,
+      transparent 0,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #ffb400,
+      #ffb400 1px,
+      transparent 0,
+      transparent 12.2px
+    );
+  background-position: 0 103%, 2px 103%;
+  background-size: 17px 10px;
+  background-repeat: repeat-x;
+  animation: 0.8s infinite normal b;
+  animation-timing-function: linear;
+}
+
+@media screen and (max-width: 48em) {
+  .home-hero__text h1 a {
+    background-image: repeating-linear-gradient(
+        -45deg,
+        #ffb400,
+        #ffb400 1px,
+        transparent 0,
+        transparent 13px
+      ),
+      repeating-linear-gradient(
+        45deg,
+        #ffb400,
+        #ffb400 1px,
+        transparent 0,
+        transparent 11px
+      );
+    padding-bottom: 0.625rem;
+  }
+}
+
+.home-image {
+  padding: 0;
+  background-size: cover;
+  position: relative;
+  background-position: 50%;
+  padding-bottom: 63%;
+  margin-bottom: 3.75rem;
+}
+
+@media screen and (max-width: 48em) {
+  .home-image {
+    padding-bottom: 115%;
+  }
+}
+
+.img-loader__img {
+  background-size: cover;
+  background-position: 50%;
+  z-index: 1;
+}
+
+.img-loader__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.img-loader__img.hero {
+  background-image: url("../public/images/home-hero.avif");
+}
+
+@keyframes b {
+  0% {
+    background-position-x: 0, 2px;
+  }
+  100% {
+    background-position-x: 17px, 19px;
+  }
+}
+
+.home-columns {
+  padding: 3.75rem;
+}
+@media screen and (max-width: 48em) {
+  .home-columns {
+    padding: 1.875rem;
+  }
+}
+.home-columns h2 {
+  margin-bottom: 3.75rem;
+  width: 100%;
+  max-width: 645px;
+}
+
+.home-columns__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3.75rem;
+}
+@media screen and (max-width: 48em) {
+  .home-columns__grid {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1.875rem;
+  }
+}
+
+.home-columns__img {
+  padding-bottom: 135%;
+  margin-bottom: 1.875rem;
+  position: relative;
+}
+.home-columns__img .first {
+  background-image: url("../public/images/home_page_one.avif");
+}
+.home-columns__img .second {
+  background-image: url("../public/images/home_page_two.avif");
+}
+.home-columns__img .third {
+  background-image: url("../public/images/home_page_three.avif");
+}
+
+.home-columns p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.home-events {
+  padding: 3.75rem 3.75rem 9.375rem;
+}
+
+@media screen and (max-width: 48em) {
+  .home-events {
+    padding: 1.875rem;
+  }
+}
+
+.home-events__header,
+.home-events__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3.75rem;
+}
+
+@media screen and (max-width: 48em) {
+  .home-events__header,
+  .home-events__row {
+    grid-template-columns: 1fr;
+    grid-row-gap: 3.75rem;
+  }
+}
+.home-events__header {
+  padding: 3.75rem 0;
+}
+.home-events__header-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-events__header-item svg {
+  font-size: 3.75rem;
+}
+
+.home-events__header-item h1 {
+  font-size: 6.25rem;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+@media screen and (max-width: 48em) {
+  .home-events__header-item h1 {
+    font-size: 4.4rem;
+    line-height: 1.09;
+  }
+}
+
+.home-events__row {
+  position: relative;
+  padding: 4.6875rem 0 6.25rem;
+  background-image: linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0);
+  background-position: 0 0, 0 100%, left 14px, 0 calc(100% - 14px);
+  background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
+  background-size: 24px 1px, 24px 1px, 24px 1px, 24px 1px;
+  animation: 0.8s infinite normal c;
+  animation-timing-function: linear;
+}
+
+@media screen and (max-width: 48em) {
+  .home-events__row {
+    padding: 0;
+    background-image: none;
+    grid-row-gap: 0;
+  }
+}
+
+@keyframes c {
+  0% {
+    background-position-x: 0, 0;
+  }
+  100% {
+    background-position-x: 24px, -24px;
+  }
+}
+
+.home-events__row-item {
+  cursor: pointer;
+}
+@media screen and (max-width: 48em) {
+  .home-events__row-item {
+    width: calc(100% - 3.75rem);
+    margin: 0 auto;
+    padding: 3.75rem 1.25rem;
+    background-image: linear-gradient(90deg, #000 50%, transparent 0),
+      linear-gradient(90deg, #000 50%, transparent 0);
+    background-position: 0 100%, 0 calc(100% - 14px);
+    background-repeat: repeat-x, repeat-x;
+    background-size: 24px 1px, 24px 1px;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .home-events__row-item:first-child {
+    background-image: linear-gradient(90deg, #000 50%, transparent 0),
+      linear-gradient(90deg, #000 50%, transparent 0),
+      linear-gradient(90deg, #000 50%, transparent 0),
+      linear-gradient(90deg, #000 50%, transparent 0);
+    background-position: 0 0, 0 100%, left 14px, 0 calc(100% - 14px);
+    background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
+    background-size: 24px 1px, 24px 1px, 24px 1px, 24px 1px;
+  }
+}
+
+.home-events__row-item p,
+.home-events__row > a {
+  font-family: var(--ff-primary);
+  font-size: 16px;
+  text-align: center;
+}
+
+.home-events__row-item span {
+  font-family: var(--ff-primary);
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.home-events__row > a {
+  padding: 1.25rem;
+  width: 180px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid #000;
+  transition: background 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+    color 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.home-events__row > a:hover {
+  background: #000;
+  color: #fff;
+}
+
+@media screen and (max-width: 48em) {
+  .home-events__row > a {
+    margin-top: 3.75rem;
+    width: 100%;
+    position: static;
+    transform: none;
+  }
+}
+
+.home-address {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3.75rem;
+  padding: 0 3.75rem;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 48em) {
+  .home-address {
+    grid-template-columns: 1fr;
+    padding: 0 1.875rem;
+    margin: 1.875rem 0 0;
+  }
+}
+
+.home-address__text {
+  padding: 5.625rem 1.875rem;
+  background-image: linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0);
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 1.875rem 1px, 1.875rem 1px, 1px 1.875rem, 1px 1.875rem;
+  animation: 0.4s infinite normal a;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+.home-address__text:hover {
+  animation-play-state: running;
+}
+
+@media screen and (max-width: 48em) {
+  .home-address__text {
+    padding: 3.75rem 1.875rem;
+  }
+}
+
+.home-address__text h3 {
+  text-align: center;
+  width: 100%;
+  max-width: 385px;
+  margin: 0 auto;
+}
+
+@keyframes a {
+  0% {
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+  }
+  100% {
+    background-position: 30px 0, -30px 100%, 0 -30px, 100% 30px;
+  }
+}
+
+.home-address__map {
+  padding: 1px;
+  height: 100%;
+  background-image: linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(90deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0),
+    linear-gradient(180deg, #000 50%, transparent 0);
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+  animation: 0.4s infinite normal a;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+.home-address__map-image {
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-image: url("../public/images/group-11.avif");
+}
+
+.home-address__map:hover {
+  animation-play-state: running;
+}
