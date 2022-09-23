@@ -13,12 +13,8 @@ export default function Footer() {
       <section className="footer">
         <div className="footer__row">
           <div className="footer__row-item">
-            <h3 className="js-footer-overlay-heading">
-              Interested in becoming a vendor?
-            </h3>
-            <a href="" className="js-vendor-open">
-              click here
-            </a>
+            <h3>Interested in becoming a vendor?</h3>
+            <a href="">click here</a>
           </div>
         </div>
         <div className="footer__row">
@@ -61,7 +57,7 @@ export default function Footer() {
               <MailIcon />
             </p>
             <p className="mobile-only">Get updates in your inbox</p>
-            <form className="js-newsletter-form">
+            <form>
               <input
                 type="text"
                 placeholder="Email"
