@@ -190,6 +190,8 @@ input:focus {
   overflow-y: hidden;
 }
 
-.container {
-  width: calc(100% - 180px);
+@media screen and (min-width: 80em) {
+  .container {
+    width: calc(100% - 180px);
+  }
 }
