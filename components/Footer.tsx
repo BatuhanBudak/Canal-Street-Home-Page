@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { FacebookLogo, InstagramLogo, MailIcon, PenIcon } from "./Icon";
 
 export default function Footer() {
-  const [value, setValue] = useState();
+  const [value, setValue] = useState("");
 
-  function handleChange(e) {
-    setValue(e.target.value);
+  function handleChange(e: React.FormEvent<HTMLInputElement>) {
+    setValue(e.currentTarget.value);
   }
 
   return (
@@ -60,6 +60,7 @@ export default function Footer() {
             <form>
               <input
                 type="text"
+                name="email"
                 placeholder="Email"
                 value={value}
                 onChange={(e) => handleChange(e)}
